@@ -10,7 +10,7 @@ const Panding = ({ label, percentage, price, quantity }) => {
         Автор: <a href={label}>{label}</a>
       </p>
       <p>Цена:{price} кредитов</p>
-      <p>Доступность: {quantity < 20 ? 'заканчивается' : 'есть в наличии'}</p>
+      <p>Доступность: {quantity < 19 ? 'заканчивается' : 'есть в наличии'}</p>
       <button type="button">Добавить в корзину</button>
     </div>
   );
