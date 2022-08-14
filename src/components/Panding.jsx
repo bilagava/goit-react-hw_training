@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import dafautImage from '../5.png';
+import dafaultImage from '../5.png';
 
 const Panding = ({ label, percentage, price, quantity }) => {
   return (
     <div>
-      <img src={label ?? dafautImage} alt={percentage} width="480" />
+      <img src={label ?? dafaultImage} alt={percentage} width="480" />
       <h2>{percentage}</h2>
       <p>
         Автор: <a href={label}>{label}</a>
