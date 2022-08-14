@@ -1,0 +1,37 @@
+[
+  {
+    "id": "id-1",
+    "label": ".docx",
+    "percentage": 22,
+    "price": 500,
+    "quantity": 10
+  },
+  {
+    "id": "id-2",
+    "label": ".pdf",
+    "percentage": 4,
+    "price": 400,
+    "quantity": 20
+  },
+  {
+    "id": "id-3",
+    "label": ".mp3",
+    "percentage": 17,
+    "price": 300,
+    "quantity": 40
+  },
+  {
+    "id": "id-4",
+    "label": ".psd",
+    "percentage": 47,
+    "price": 200,
+    "quantity": 50
+  },
+  {
+    "id": "id-5",
+    "label": ".pdf",
+    "percentage": 10,
+    "price": 100,
+    "quantity": 7
+  }
+]

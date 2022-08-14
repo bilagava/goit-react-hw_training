@@ -1,16 +1,14 @@
-export const App = () => {
+import PandingList from './PandingList';
+import data from '../data.json';
+import Section from './Section';
+
+export default function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <Section title="Топ недели">
+        <PandingList items={data} />
+      </Section>
+      <Section />
     </div>
   );
-};
+}
