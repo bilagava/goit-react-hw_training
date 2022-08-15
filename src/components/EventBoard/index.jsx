@@ -5,13 +5,14 @@ import css from './style.module.css';
 export const EventBoard = ({ events }) => {
   return (
     <div className={css.eventBoard}>
-      {events.map(({ id, label, percentage, price, quantity }) => (
+      {events.map(({ id, label, percentage, price, start, type }) => (
         <Event
           key={id}
           label={label}
           percentage={percentage}
           price={price}
-          quantity={quantity}
+          start={start}
+          type={type}
         />
       ))}
     </div>
@@ -25,7 +26,7 @@ EventBoard.propTypes = {
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
       price: PropTypes.number.isRequired,
-      quantity: PropTypes.number.isRequired,
+      start: PropTypes.string.isRequired,
     })
   ),
 };
