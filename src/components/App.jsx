@@ -1,14 +1,12 @@
-import PandingList from './PandingList';
-import data from '../data.json';
-import Section from './Section';
+import { PageTitle } from 'components/PageTitle';
+import { EventBoard } from 'components/EventBoard';
+import eventsData from '../data.json';
 
-export default function App() {
+export const App = () => {
   return (
     <div>
-      <Section title="Топ недели">
-        <PandingList items={data} />
-      </Section>
-      <Section />
+      <PageTitle text="Заголовок таблички" />
+      <EventBoard events={eventsData} />
     </div>
   );
-}
+};
