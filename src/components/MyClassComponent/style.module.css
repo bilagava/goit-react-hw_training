@@ -1,0 +1,19 @@
+.counter {
+  display: flex;
+  text-align: center;
+  padding: 5px;
+}
+
+.buttonClickMy {
+  width: 30px;
+  margin: 0 auto;
+  display: block;
+  color: red;
+  background-color: yellow;
+  cursor: pointer;
+  border: none;
+}
+
+.number {
+  margin: 10px;
+}
