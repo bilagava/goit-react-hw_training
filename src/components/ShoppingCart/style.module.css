@@ -1,0 +1,7 @@
+.item {
+  width: auto;
+  color: white;
+  background-color: tomato;
+  margin-top: 10px;
+  cursor: pointer;
+}
