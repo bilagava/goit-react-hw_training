@@ -1,13 +1,13 @@
 import React from 'react';
 import style from './style.module.css';
-import { v4 as uuidv4 } from 'uuid';
+import { nanoid } from 'nanoid';
 
 export const ShoppingCart = ({ items }) => {
   return (
     <ul>
-      {items.map(({ item }) => (
-        <li id={uuidv4()} className={style.item}>
-          {item}
+      {items.map(({ name }) => (
+        <li key={nanoid()} className={style.item}>
+          {name}
         </li>
       ))}
     </ul>

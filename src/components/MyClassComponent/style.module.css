@@ -5,15 +5,28 @@
 }
 
 .buttonClickMy {
-  width: 30px;
-  margin: 0 auto;
+  width: 50px;
+  margin: 10px auto;
   display: block;
   color: red;
   background-color: yellow;
   cursor: pointer;
   border: none;
+  box-shadow: 2px 2px 5px red;
+  font-size: 40px;
 }
 
+.buttonClickMy:hover {
+  color: yellow;
+  background-color: red;
+}
+
+.buttonClickMy:focus {
+  color: yellow;
+  background-color: red;
+  box-shadow: 2px 2px 5px yellow;
+}
 .number {
   margin: 10px;
+  font-size: 24px;
 }
