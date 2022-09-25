@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import css from './style.module.css';
-import png from '../searchCat.png';
 
 class SearchBar extends Component {
   state = {
     inputValue: '',
   };
 
-  handleInputChange = event => {
-    this.setState({ inputValue: event.currentTarget.value });
+  handleInputChange = evt => {
+    this.setState({ inputValue: evt.currentTarget.value });
   };
 
-  onFormSubmit = event => {
-    event.preventDefault();
+  onFormSubmit = e => {
+    e.preventDefault();
     if (this.state.inputValue === '') {
       alert('Введите название');
       return;
@@ -27,7 +26,6 @@ class SearchBar extends Component {
       <header className={css.searchBar}>
         <form onSubmit={this.onFormSubmit} className={css.form}>
           <button type="submit" className={css.button}>
-            <img src={png} />
             <span className={css.button_label}>Search</span>
           </button>
 
@@ -36,8 +34,8 @@ class SearchBar extends Component {
             value={this.state.inputValue}
             className={css.input}
             type="text"
-            autocomplete="off"
-            autofocus
+            autoComplete="off"
+            autoFocus
             placeholder="Search images and photos"
           />
         </form>
@@ -46,7 +44,8 @@ class SearchBar extends Component {
   }
 }
 
-// SearchBar.prototype = {
-//   onSubmit: PropTypes.func.isRequired };
+SearchBar.protoType = {
+  onSubmit: PropTypes.func.isRequired,
+};
 
 export default SearchBar;

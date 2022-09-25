@@ -1,2 +1,2 @@
-import imageGalleryItem from './imageGalleryItem';
-export default imageGalleryItem;
+import ImageGalleryItem from './imageGalleryItem';
+export default ImageGalleryItem;

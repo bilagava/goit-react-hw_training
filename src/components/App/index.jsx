@@ -56,6 +56,7 @@ class App extends Component {
     }
     this.setState({ name: name.toLowerCase(), images: [], page: 1 });
   };
+
   onLoadMoreClick = () => {
     this.setState(prevState => ({ page: prevState.page + 1 }));
   };
