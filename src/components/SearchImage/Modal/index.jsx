@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import css from './style.module.css';
 
-const Modal = (onModalClose, image, tag) => {
+const Modal = ({ onModalClose, image, tag }) => {
   useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
   });
